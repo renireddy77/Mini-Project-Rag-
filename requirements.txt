@@ -1,7 +1,9 @@
 streamlit
-langchain
-langchain-community
-langchain-openai
+pandas
 openai
+langchain
+langchain-openai
+tiktoken
+chromadb        
+openpyxl      
 python-dotenv
-openpyxl
