@@ -3,7 +3,8 @@ pandas
 openai
 langchain
 langchain-openai
-tiktoken
-chromadb        
-openpyxl      
+langchain-community          
+chromadb                     
+openpyxl                  
 python-dotenv
+tiktoken
