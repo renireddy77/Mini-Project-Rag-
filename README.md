@@ -27,6 +27,23 @@ This is an AI-powered medical assistant that takes user-input symptoms and provi
 | Dataset  | Excel (medical_symptom_dataset.xlsx) |
 
 ---
+## 📦 Setup Instructions
+1.Clone the repository
+bash
+git clone https://github.com/your-username/Medical-Symptom-Checker.git
+cd Medical-Symptom-Checker 
+2.Create virtual environment
+python -m venv .venv
+.\.venv\Scripts\activate
+3.Install dependencies
+pip install -r requirements.txt
+4.OPENAI_API_KEY=sk-xxxx
+5.streamlit run main.py
+
+# Use Cases
+Health education
+First-aid suggestions
+Symptom tracking for rural clinics
 
 # How Streamlit Works
 
