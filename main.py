@@ -2,7 +2,7 @@ import os
 import streamlit as st
 import pandas as pd
 from dotenv import load_dotenv
-from langchain_community.vectorstores import FAISS
+from langchain_community.vectorstores import Chroma
 from langchain.docstore.document import Document
 from langchain.text_splitter import CharacterTextSplitter
 from langchain_openai import OpenAIEmbeddings, ChatOpenAI
@@ -51,8 +51,11 @@ def load_and_prepare_docs():
     docs = splitter.split_documents(documents)
 
     embeddings = OpenAIEmbeddings()
-    vectorstore = FAISS.from_documents(docs, embedding=embeddings, collection_name="medical_cases")
-    return RetrievalQA.from_chain_type(llm=ChatOpenAI(temperature=0), retriever=vectorstore.as_retriever())
+    vectorstore = Chroma.from_documents(docs, embedding=embeddings, collection_name="medical_cases")
+    return RetrievalQA.from_chain_type(
+    llm=ChatOpenAI(temperature=0.3, model="gpt-3.5-turbo"),
+    retriever=vectorstore.as_retriever()
+)
 
 # Load RAG chain
 rag_chain = load_and_prepare_docs()
@@ -80,7 +83,7 @@ If insufficient information is provided, ask clarifying questions.
 # Input box
 symptoms = st.text_area("Enter symptoms (e.g. fever, cough, chest pain)", height=100)
 
-# Process user input
+# streamlit UI
 if st.button("Get Medical Advice"):
     if symptoms.strip():
         with st.spinner("Analyzing symptoms..."):
