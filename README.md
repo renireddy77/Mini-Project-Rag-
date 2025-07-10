@@ -6,12 +6,12 @@ This is an AI-powered medical assistant that takes user-input symptoms and provi
 
 # Features
 
-- ✅ Input symptoms like "fever, chest pain, nausea"
-- 🔍 Searches similar medical cases from a CSV/Excel dataset
-- 🤖 Uses LangChain + FAISS + OpenAI GPT-3.5 Turbo
-- 💊 Returns possible diagnosis, medications, severity, and lifestyle advice
-- 📦 Simple UI built with Streamlit
-- 🧠 Supports over 10,000+ patient records
+- Input symptoms like "fever, chest pain, nausea"
+- Searches similar medical cases from a CSV/Excel dataset
+- Uses LangChain + FAISS + OpenAI GPT-3.5 Turbo
+- Returns possible diagnosis, medications, severity, and lifestyle advice
+- Simple UI built with Streamlit
+- Supports over 10,000+ patient records
 
 ---
 
