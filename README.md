@@ -30,7 +30,7 @@ This is an AI-powered medical assistant that takes user-input symptoms and provi
 ## 📦 Setup Instructions
 1.Clone the repository
 bash
-git clone https://github.com/renireddy77/Medical-Symptom-Checker.git
+git clone https://github.com/renireddy77/Mini-Project-Rag-
 cd Medical-Symptom-Checker 
 2.Create virtual environment
 python -m venv .venv
