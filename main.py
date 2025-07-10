@@ -12,14 +12,14 @@ from langchain.chains import RetrievalQA
 load_dotenv()
 api_key = None
 
-# ✅ First: Try from Streamlit Cloud (secrets)
+# Try from Streamlit Cloud (secrets)
 try:
     api_key = st.secrets["OPENAI_API_KEY"]
 except Exception:
     # ❌ If not found in cloud, try from local .env
     api_key = os.getenv("OPENAI_API_KEY")
 
-# ✅ Use the key
+# Use the key
 if not api_key:
     st.error("❌ OPENAI_API_KEY not found in Streamlit secrets or .env")
 else:
