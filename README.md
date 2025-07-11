@@ -58,4 +58,5 @@ Streamlit is a Python library to build web apps for machine learning and data sc
 
 We used Streamlit to create a form where the user enters symptoms. On clicking a button, the AI generates advice.
 <img width="952" alt="image" src="https://github.com/user-attachments/assets/0275ca26-e9f0-4546-ab5f-5801557cb3a4" />
+https://drive.google.com/drive/folders/1YZT2vH8FZ0jyz34HVGtK1LlqNnizcNty
 
